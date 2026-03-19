@@ -26,4 +26,4 @@ jobs:
         run: |
           DOCKERNAME="plyo/${{ github.event.repository.name }}:${{ matrix.tag }}"
           docker build . -t ${DOCKERNAME} -f ${{ matrix.dockerfile }}
-          docker push ${DOCKERNAME }}
+          docker push ${DOCKERNAME}
